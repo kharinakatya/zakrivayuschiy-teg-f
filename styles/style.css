@@ -61,7 +61,6 @@
   justify-self: center;
   gap: 52px;
   max-width: var(--section-width);
-  min-inline-size: 375px;
   max-inline-size: 696px;
 }
 
@@ -131,6 +130,7 @@ img {
 
 .label {
   position: absolute;
+  text-transform: uppercase;
   z-index: 1;
   font-family: var(--font-accent);
   font-size: 14px;
@@ -139,7 +139,6 @@ img {
   line-height: 100%;
   inset-block-start: 25px;
   inset-inline-end: 11px;
-  mix-blend-mode: hard-light;
   text-shadow: 0 0 2px var(--bg-color);
   opacity: 0.5;
 }
@@ -249,6 +248,8 @@ button:focus-visible {
 }
 
 .save-button {
+  background-color: #fff;
+  color: #000;
   display: flex;
   align-items: center;
   align-self: center;
@@ -271,8 +272,7 @@ button:focus-visible {
   position: relative;
   align-self: center;
   z-index: 1;
-  color: #fff;
-  mix-blend-mode: difference;
+  color: #000;
   }
 
 dialog {
