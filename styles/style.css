@@ -189,7 +189,7 @@ img {
 
 button {
   position: relative;
-  background-color: transparent;
+  background-color: #fff;
   align-self: end;
   align-items: center;
   outline: none;
@@ -197,7 +197,7 @@ button {
   transition: box-shadow 0.2s ease;
   padding: 6px 17px;
   cursor: pointer;
-  color: #000000;
+  color: #000;
 }
 
 button::before {
@@ -256,7 +256,6 @@ button:focus-visible {
   padding-block: 18.5px;
   padding-inline: 19px 21px;
   margin-block-end: 103px;
-  background-color: var(--bg-color);
 }
 
 .save-button svg {
@@ -266,21 +265,15 @@ button:focus-visible {
 .icon-disc {
   inline-size: 21px;
   block-size: 21px;
-  position: relative;
-  z-index: 1;
 }
 
 .floppy-icon {
   position: relative;
   align-self: center;
   z-index: 1;
-  --icon-floppy: #000;
+  color: #fff;
   mix-blend-mode: difference;
   }
-
-.floppy-icon:hover {
-  --icon-floppy: #fff;
-}
 
 dialog {
   position: fixed;

@@ -19,6 +19,7 @@
     --button-text-font-weight: 400;
     --button-text-font-family: 'PressStart2P';
     --bg-color: #fff;
+    --icon-floppy: rgba(0, 0, 0);
     --font-main: 'Inter', sans-serif; /* Основной шрифт */
     --font-accent: 'PressStart2P'; /* Акцентный шрифт */
     --label-color: #ffffff;
