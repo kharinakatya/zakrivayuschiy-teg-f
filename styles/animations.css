@@ -54,11 +54,6 @@
   }
   
   .like-icon:focus {
-    outline: transparent;
-    transition: border 0.3s ease;
-  }
-  
-  .like-icon:focus {
     outline: 2px solid var(--accent-color);
     transition: border 0.3s ease;
   }
