@@ -664,7 +664,7 @@
     </button>
     </div>
       </article>
-    <button class="save-button"
+    <button class="save-button button"
     type="button"
     onclick="window['modal-window'].showModal();"
     aria-controls="modal-window">
@@ -678,14 +678,15 @@
 <dialog id="modal-window" class="modal-window">
   <div class="modal-article">
     <div class="disc">
-  <svg width="39" height="39">
+  <svg class="modal-icon-disk">
     <use href="./svg/floppy.svg#floppySave"></use>
   </svg>
 <span class="modal-title">Вставьте дискету, чтобы продолжить</span>
 </div>
-<button class="modal-button"
+<button
 type="button"
-onclick="window['modal-window'].close();">
+onclick="window['modal-window'].close()"
+class="modal-button button">
 <span class="button__text">ок</span>
 </button>
 </div>

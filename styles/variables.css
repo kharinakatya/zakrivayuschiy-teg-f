@@ -1,6 +1,5 @@
 :root {
     --h1-font-size: clamp(3.0625rem, 1.9087rem + 4.9231vw, 4.0625rem);
-    --section-width: clamp(375px, 80vw, 696px);
     --h1-font-weight: 400;
     --h1-line-height: 65px;
     --accent-color: #000;
@@ -15,11 +14,12 @@
     --text-card-font-weight: 400;
     --font-variation-settings: 'Inter';
     --text-card-line-height: 21px;
-    --button-text-font-size: 14px;
+    --text-font-size: 14px;
     --button-text-font-weight: 400;
     --button-text-font-family: 'PressStart2P';
     --bg-color: #fff;
-    --label-color: #000;
+    --button-text-color: rgba(255, 255, 255, 1);
+    --black-color: #000;
     --icon-floppy: rgba(0, 0, 0);
     --font-main: 'Inter', sans-serif; /* Основной шрифт */
     --font-accent: 'PressStart2P'; /* Акцентный шрифт */

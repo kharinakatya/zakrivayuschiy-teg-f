@@ -31,11 +31,11 @@
   border-width: 2px;
   border-style: solid;
   border-color: #000000;
+  text-transform: uppercase;
 }
 
 .header__title {
   text-align: center;
-  text-transform: uppercase;
   font-size: var(--h1-font-size);
   font-weight: var(--font-weight-header);
   line-height: var(--h1-line-height);
@@ -44,21 +44,15 @@
 
 .heading__title {
   text-align: center;
-  text-transform: uppercase;
   font-size: var(--h2-font-size);
   font-family: var(--h2-font-family);
 }
-
-/* заканчивается голова */
-
-/* начало меню */
 
 .main__section-list {
   display: flex;
   flex-direction: column;
   justify-self: center;
   gap: 52px;
-  max-width: var(--section-width);
   max-inline-size: 696px;
 }
 
@@ -91,7 +85,7 @@ img {
 }
 
 .img-main-filter {
-  filter: hue-rotate(50deg) opacity(50%);/* нужно добавить фильтр для всех */
+  filter: hue-rotate(50deg) opacity(50%);
 }
 
 .image-one {
@@ -131,7 +125,7 @@ img {
   text-transform: uppercase;
   z-index: 1;
   font-family: var(--font-accent);
-  font-size: 14px;
+  font-size: var(--text-font-size);
   font-weight: var(--font-weight-regular);
   color: #000;
   line-height: 100%;
@@ -209,7 +203,7 @@ button::before {
   transition: width 0.5s ease-in-out, opacity 0.5s ease-in-out;
   opacity: 0;
   z-index: 0;
-  color: #fff;
+  color: var(--button-text-color);
 }
 
 button:hover::before {
@@ -220,13 +214,13 @@ button:hover::before {
 }
 
 button:focus-visible {
-  box-shadow: 2px 2px 0px #000000;
+  box-shadow: 2px 2px 0px var(--black-color);
 }
 
 .button__text {
   position: relative;
   z-index: 1;
-  color: #fff;
+  color: var(--button-text-color);
   font-weight: var(--button-text-font-weight);
   font-family: var(--button-text-font-family), sans-serif;
   line-height: 12.6px;
@@ -246,8 +240,8 @@ button:focus-visible {
 }
 
 .save-button {
-  background-color: #fff;
-  color: #000;
+  background-color: var(--bg-color);
+  color: var(--black-color);
   display: flex;
   align-items: center;
   align-self: center;
@@ -270,12 +264,13 @@ button:focus-visible {
   position: relative;
   align-self: center;
   z-index: 1;
-  color: #000;
-  }
+  mix-blend-mode: difference;
+  color: #fff;
+}
 
 dialog {
-  position: fixed;
   display: block;
+  position: fixed;
   justify-content: center;
   max-width: 353px;
   inset: 0;
@@ -303,9 +298,9 @@ dialog:not([open]) {
 
 .modal-title {
   width: 234px;
-  font-size: 14px;
-  font-weight: 400;
-  font-family: 'PressStart2P';
+  font-size: var(--text-font-size);
+  font-weight: var(--font-weight-normal);
+  font-family: var(--font-accent);
   text-transform: uppercase;
 }
 
@@ -317,6 +312,11 @@ dialog::backdrop {
   background-color: #000;
   opacity: 0.75;
 } 
+
+.modal-icon-disk {
+  inline-size: 39px;
+  block-size: 39px
+}
 
 @media (width <= 375px) {
   .page {
