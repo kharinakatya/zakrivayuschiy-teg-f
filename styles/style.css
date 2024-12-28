@@ -13,8 +13,6 @@
   background-color: var(--bg-color);
 }
 
-/*начинается голова */
-
 .header {
   display: flex;
   justify-content: center;
