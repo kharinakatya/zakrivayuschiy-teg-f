@@ -275,7 +275,7 @@ button:focus-visible {
 
 dialog {
   position: fixed;
-  display: grid;
+  display: block;
   justify-content: center;
   max-width: 353px;
   inset: 0;
