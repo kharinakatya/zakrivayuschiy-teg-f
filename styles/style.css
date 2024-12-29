@@ -23,7 +23,7 @@
   flex-direction: column;
   align-self: start;
   gap: 20px;
-  background-color: #FFFFFF;
+  background-color: var(--bg-color);
   max-width: 700px;
   width: 100%;
   padding-block: 128px;
@@ -153,7 +153,6 @@ img {
   padding-block: 25px;
   font-size: var(--text-card-font-size);
   font-weight: var(--text-card-font-weight);
-  font-family: var(--text-card-font-family), sans-serif;
   line-height: var(--text-card-line-height);
 }
 
@@ -182,7 +181,6 @@ button {
   position: relative;
   background-color: #fff;
   align-self: end;
-  align-items: center;
   outline: none;
   overflow: visible;
   transition: box-shadow 0.2s ease;
@@ -226,7 +224,6 @@ button:focus-visible {
   line-height: 12.6px;
   mix-blend-mode: difference;
   font-size: var(--font-button-size);
-  -webkit-text-combine: horizontal;
 }
 
 .core {
@@ -240,8 +237,6 @@ button:focus-visible {
 }
 
 .save-button {
-  background-color: var(--bg-color);
-  color: var(--black-color);
   display: flex;
   align-items: center;
   align-self: center;
@@ -265,17 +260,17 @@ button:focus-visible {
   align-self: center;
   z-index: 1;
   mix-blend-mode: difference;
-  color: #fff;
+  color: var(--button-text-color);
 }
 
 dialog {
   display: block;
   position: fixed;
   justify-content: center;
-  max-width: 353px;
   inset: 0;
   border-width: 2px;
   z-index: 1;
+  padding: 30px;
 }
 
 dialog:not([open]) {
@@ -315,7 +310,11 @@ dialog::backdrop {
 
 .modal-icon-disk {
   inline-size: 39px;
-  block-size: 39px
+  block-size: 39px;
+}
+
+.button-ok {
+  width: 100%;
 }
 
 @media (width <= 375px) {

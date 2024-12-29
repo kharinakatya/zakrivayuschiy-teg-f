@@ -17,7 +17,7 @@
     --text-font-size: 14px;
     --button-text-font-weight: 400;
     --button-text-font-family: 'PressStart2P';
-    --bg-color: #fff;
+    --bg-color: #fff; /* фон для всех кнопок и карточек */
     --button-text-color: rgba(255, 255, 255, 1);
     --black-color: #000;
     --icon-floppy: rgba(0, 0, 0);
