@@ -1,35 +1,21 @@
 :root {
     --h1-font-size: clamp(3.0625rem, 1.9087rem + 4.9231vw, 4.0625rem);
-    --h1-font-weight: 400;
     --h1-line-height: 65px;
-    --accent-color: #000;
-    --font-button-size: 14px;
     --font-weight-regular: 400;
+    --font-weight-header: 700;
     --h2-font-size: clamp(0.875rem, 0rem + 6.6667vw, 1.4375rem);
-    --h2-font-family: 'PressStart2P';
     --h3-font-size: clamp(1.125rem, 1.125rem + 0vw, 1.125rem);
-    --h3-font-weight: 700;
     --h3-line-height: 21.78px;
     --text-card-font-size: 18px;
-    --text-card-font-weight: 400;
-    --font-variation-settings: 'Inter';
-    --text-card-line-height: 21px;
     --text-font-size: 14px;
-    --button-text-font-weight: 400;
-    --button-text-font-family: 'PressStart2P';
-    --bg-color: #fff; /* фон для всех кнопок и карточек */
+    --text-card-line-height: 21px;
     --button-text-color: rgba(255, 255, 255, 1);
     --black-color: #000;
-    --icon-floppy: rgba(0, 0, 0);
     --font-main: 'Inter', sans-serif; /* Основной шрифт */
     --font-accent: 'PressStart2P'; /* Акцентный шрифт */
-    --label-color: #ffffff;
-    --font-weight-normal: 400;
-    --icon-color: #fff;
     --red-color: red;
     --contour-color: #000; /* Цвет контура по умолчанию */
     --sparks-color: red; /* Цвет искр по умолчанию */
-    --font-weight-header: 700;
     --background-gradient:
         repeating-linear-gradient(to right,
             #d3d3d3,

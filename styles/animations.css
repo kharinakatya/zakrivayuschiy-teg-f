@@ -47,8 +47,10 @@
     }
   }
   
-  /* стили состояний сердца */
-  
+  .heart {
+    transition: fill 0.3s ease 0.2s;
+  }
+
   .like-icon {
     max-block-size: 38px;
   }
