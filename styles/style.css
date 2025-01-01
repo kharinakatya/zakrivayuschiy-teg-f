@@ -145,6 +145,7 @@ img {
             -1px 1px 0 var(--text-outline-color),
             1px 1px 0 var(--text-outline-color);
         -webkit-text-stroke: 1px var(--text-outline-color);
+        text-stroke: 1px var(--text-outline-color);
     }
 }
 
