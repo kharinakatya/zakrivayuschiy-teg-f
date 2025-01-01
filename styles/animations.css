@@ -51,6 +51,16 @@
     transition: fill 0.3s ease 0.2s;
   }
 
+  .core {
+    fill: none;
+    transition: fill 0.3s ease;
+  }
+  
+  .contour .core {
+    fill: var(--sparks-color);
+    transition: fill 0.3s 0.06s linear;
+  }
+
   .like-icon {
     max-block-size: 38px;
   }

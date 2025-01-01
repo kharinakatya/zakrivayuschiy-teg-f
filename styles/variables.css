@@ -1,19 +1,20 @@
 :root {
     --h1-font-size: clamp(3.0625rem, 1.9087rem + 4.9231vw, 4.0625rem);
-    --h1-line-height: 65px;
     --font-weight-regular: 400;
     --font-weight-header: 700;
-    --h2-font-size: clamp(0.875rem, 0rem + 6.6667vw, 1.4375rem);
+    --h2-font-size: clamp(0.875rem, 0.226rem + 2.7692vw, 1.4375rem);
     --h3-font-size: clamp(1.125rem, 1.125rem + 0vw, 1.125rem);
     --h3-line-height: 21.78px;
     --text-card-font-size: 18px;
     --text-font-size: 14px;
     --text-card-line-height: 21px;
+    --bg-color: rgba(255, 255, 255, 1);
     --button-text-color: rgba(255, 255, 255, 1);
     --black-color: #000;
     --font-main: 'Inter', sans-serif; /* Основной шрифт */
     --font-accent: 'PressStart2P'; /* Акцентный шрифт */
     --red-color: red;
+    --text-outline-color: rgba(255, 255, 255, 1);
     --contour-color: #000; /* Цвет контура по умолчанию */
     --sparks-color: red; /* Цвет искр по умолчанию */
     --background-gradient:

@@ -3,7 +3,8 @@
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400 785;
-    src: url('../fonts/Inter-Variable.woff2') format('woff2 supports variations, woff2-variations'),
+    src: url('../fonts/Inter-Variable.woff2') format('woff2 supports variations'),
+         url('../fonts/Inter-Variable.woff2') format('woff2-variations'),
          url('../fonts/Inter-Variable.woff') format('woff');
 }
 
