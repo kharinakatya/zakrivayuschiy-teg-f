@@ -193,7 +193,7 @@ img {
   background-color: var(--bg-color);
   align-self: start;
   outline: none;
-  border: 1px solid var(--black-color);
+  border: 2px solid var(--black-color);
   transition: box-shadow 0.2s ease;
   padding: 6px 17px;
   cursor: pointer;
