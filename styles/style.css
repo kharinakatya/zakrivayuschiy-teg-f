@@ -30,7 +30,7 @@
   flex-direction: column;
   gap: 20px;
   background-color: var(--bg-color);
-  padding: 120px 14px; 
+  padding: 120px 14px;
   border: 2px solid var(--black-color);
   text-transform: uppercase;
 }
@@ -138,14 +138,15 @@ img {
   opacity: 0.5;
   mix-blend-mode: hard-light;
 
-@supports (text-shadow: 0 0 0) { /* Проверка поддержки свойства */
+@supports (text-stroke: 1px var(--text-outline-color)) or (-webkit-text-stroke: 1px var(--text-outline-color)) {
         text-shadow: 
             -1px -1px 0 var(--text-outline-color),
             1px -1px 0 var(--text-outline-color),
             -1px 1px 0 var(--text-outline-color),
-            1px 1px 0 var(--text-outline-color); /* Обводка текста */
+            1px 1px 0 var(--text-outline-color);
+        -webkit-text-stroke: 1px var(--text-outline-color);
     }
-  }
+}
 
 .main__section-list-item {
   display: flex;
