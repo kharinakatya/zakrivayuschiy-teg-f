@@ -60,10 +60,6 @@
     fill: var(--sparks-color);
     transition: fill 0.3s 0.06s linear;
   }
-
-  .like-icon {
-    max-block-size: 38px;
-  }
   
   .like-icon:focus {
     outline: 2px solid var(--accent-color);

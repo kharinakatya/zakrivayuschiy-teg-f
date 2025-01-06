@@ -30,7 +30,7 @@
   flex-direction: column;
   gap: 20px;
   background-color: var(--bg-color);
-  padding: 120px 14px;
+  padding: 128px 120.5px;
   border: 2px solid var(--black-color);
   text-transform: uppercase;
 }
@@ -68,7 +68,7 @@
   font-size: var(--text-card-font-size);
   font-weight: var(--font-weight-header);
   line-height: var(--h3-line-height);
-  padding-inline-start: 10px;
+  padding-inline: 10px;
   padding-block: 5.5px;
   font-variation-settings: "wght" 700;
 }
@@ -137,13 +137,14 @@ img {
   inset-inline-end: 22px;
   opacity: 0.5;
   mix-blend-mode: hard-light;
+  text-shadow: 
+  -1px -1px 0 var(--text-outline-color),
+  1px -1px 0 var(--text-outline-color),
+  -1px 1px 0 var(--text-outline-color),
+  1px 1px 0 var(--text-outline-color);
 
 @supports (text-stroke: 1px var(--text-outline-color)) or (-webkit-text-stroke: 1px var(--text-outline-color)) {
-        text-shadow: 
-            -1px -1px 0 var(--text-outline-color),
-            1px -1px 0 var(--text-outline-color),
-            -1px 1px 0 var(--text-outline-color),
-            1px 1px 0 var(--text-outline-color);
+        text-shadow: none;
         -webkit-text-stroke: 1px var(--text-outline-color);
         text-stroke: 1px var(--text-outline-color);
     }
@@ -166,17 +167,21 @@ img {
   border: transparent;
   cursor: pointer;
   transform-origin: center;
-  align-self: start;
-  block-size: 37px;
-  margin-inline-end: 3px;
+  margin-inline-end: 5px;
+  align-self: center;
+  padding: 0;
 }
 
 .card__like-button {
   min-inline-size: 130px;
+  padding: 6.5px 17px;
 }
 
 .like-icon {
-  width: 38px;
+  display: flex;
+  align-items: center;
+  block-size: 38px;
+  inline-size: 38px;
   color: var(--spaks-color);
   transition: fill 0.3s ease;
 }
@@ -195,7 +200,6 @@ img {
   outline: none;
   border: 2px solid var(--black-color);
   transition: box-shadow 0.2s ease;
-  padding: 6px 17px;
   cursor: pointer;
   overflow: hidden;
 }
@@ -244,7 +248,7 @@ img {
   gap: 8px;
   align-items: center;
   align-self: center;
-  padding-block: 18.5px;
+  padding-block: 15px;
   padding-inline: 19px 21px;
   margin-block-end: 103px;
 }
@@ -322,6 +326,12 @@ dialog::backdrop {
   text-transform: uppercase;
 }
 
+@media (width < 1440px) {
+  .header__logo {
+    padding: 120px 14px;
+  }
+}
+
 @media (width <= 375px) {
 
   .header {
@@ -353,5 +363,9 @@ dialog::backdrop {
   .icon-disc {
     inline-size: 28px;
     block-size: 28px;
+  }
+
+  dialog {
+    padding: 42px;
   }
 }
